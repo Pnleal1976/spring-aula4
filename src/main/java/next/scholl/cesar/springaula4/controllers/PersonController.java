@@ -51,6 +51,7 @@ public ResponseEntity<Person> update(
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
     }
+    // DELETE
     
     @DeleteMapping("/{id}") // /person/12
     public ResponseEntity<?> delete(@PathVariable(value = "id") int id) {
